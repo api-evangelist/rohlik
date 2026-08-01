@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://identity.rohlik.cz/.well-known/openid-configuration
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      identity.rohlik.cz publishes an RFC 8414 OAuth 2.0 Authorization Server
+      Metadata document with authorize/token endpoints and multiple grant types.
+  - id: oidc
+    conforms: true
+    evidence: >-
+      identity.rohlik.cz publishes an OpenID Connect discovery document
+      (/.well-known/openid-configuration) with issuer, userinfo, and jwks_uri.
+  - id: rfc9728-protected-resource-metadata
+    conforms: true
+    evidence: >-
+      mcp.rohlik.cz exposes path-scoped OAuth 2.0 Protected Resource Metadata at
+      /.well-known/oauth-protected-resource/mcp linking to the authorization server.
+  - id: rfc7636-pkce
+    conforms: true
+    evidence: code_challenge_methods_supported = [S256]
+  - id: rfc7591-dynamic-client-registration
+    conforms: true
+    evidence: registration_endpoint = https://identity.rohlik.cz/connect/register
+  - id: rfc9116-security-txt
+    conforms: true
+    evidence: https://www.rohlik.cz/.well-known/security.txt returns 200 with Contact + Acknowledgement.
+  - id: mcp
+    conforms: true
+    evidence: >-
+      Hosted Model Context Protocol server at https://mcp.rohlik.cz/mcp,
+      documented at https://rohlik.cz/mcp-docs.

@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://rohlik.cz/mcp-docs
+server:
+  name: rohlik
+  description: >-
+    Official hosted Model Context Protocol server for the Rohlik online grocery
+    service. Lets an MCP client search the Rohlik catalog, build and manage a
+    cart, discover recipes, review and repeat past orders, manage shopping
+    lists, and reach customer service. Orders are only completed when the
+    customer confirms and submits them in the Rohlik e-shop interface, not
+    through the MCP client.
+  transport: http                       # streamable HTTP (JSON-RPC over HTTP/SSE)
+  url: https://mcp.rohlik.cz/mcp
+  docs: https://rohlik.cz/mcp-docs
+authentication:
+  type: oauth2
+  # MCP OAuth: server is an RFC 9728 Resource Server; AS discovered via path-scoped PRM
+  protected_resource_metadata: https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp
+  authorization_server: https://identity.rohlik.cz
+  scopes_supported: [openid, email, roles]
+  bearer_methods_supported: [header]
+  note: >-
+    Unauthenticated JSON-RPC calls return 401 invalid_token. Supported clients
+    prompt the user to log in to their Rohlik account automatically.
+tools:
+  # Tool families as documented at https://rohlik.cz/mcp-docs (exact tool names
+  # not published; captured as capability families).
+  - name: product_search
+    description: Find groceries, compare prices, and check availability in the Rohlik catalog.
+  - name: cart_management
+    description: Add items, adjust quantities, and populate the shopping cart with groceries.
+  - name: recipe_discovery
+    description: Search recipes, obtain ingredient lists, and generate meal-plan ideas.
+  - name: order_tracking
+    description: Display order history and repeat previous orders.
+  - name: shopping_lists
+    description: Create, manage, and share shopping lists.
+  - name: customer_service
+    description: Submit complaints, verify returnable bag/bottle status, and contact support.

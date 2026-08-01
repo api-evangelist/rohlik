@@ -1,0 +1,47 @@
+generated: '2026-07-21'
+method: searched
+source:
+  - https://www.rohlik.cz/mcp-docs
+  - https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp
+  - https://identity.rohlik.cz/.well-known/openid-configuration
+summary: >-
+  Cross-cutting semantics for the Rohlik hosted MCP surface. Access is an
+  agent-native Model Context Protocol endpoint (not a public REST/OpenAPI
+  contract), transported as JSON-RPC over streamable HTTP, and gated by an
+  OAuth 2.1 authorization-code + PKCE flow against the Rohlik identity provider.
+authentication:
+  style: oauth2-bearer
+  transport: streamable-http-json-rpc
+  endpoint: https://mcp.rohlik.cz/mcp
+  authorization_server: https://identity.rohlik.cz
+  protected_resource_metadata: https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp
+  flows: [authorizationCode]
+  pkce: S256
+  bearer_methods: [header]
+  scopes: [openid, email, roles]
+  note: >-
+    Supported MCP clients (e.g. Claude Desktop, ChatGPT) prompt the user to sign
+    in to their Rohlik account automatically. Unauthenticated JSON-RPC calls
+    return 401 invalid_token.
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header or contract is documented. Order submission is
+    intentionally NOT completable through the MCP client; the user must confirm
+    and submit the order in the Rohlik e-shop, which sidesteps duplicate-write
+    concerns at the agent boundary.
+pagination:
+  documented: false
+error_signaling:
+  transport: json-rpc
+  auth_failure: 401 invalid_token (WWW-Authenticate points at the protected-resource metadata)
+versioning:
+  documented: false
+  note: Service is experimental; no version identifier is published.
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/rohlik-authentication.yml
+  scopes: scopes/rohlik-scopes.yml
+  lifecycle: lifecycle/rohlik-lifecycle.yml
+  mcp: mcp/rohlik-mcp.yml

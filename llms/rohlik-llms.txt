@@ -1,0 +1,50 @@
+# Rohlik.cz
+
+> Online supermarket s doručením až domů po celé České republice, včetně doručení ve stejný den.
+
+Rohlik.cz je přední český online supermarket. Nabízíme tisíce čerstvých produktů včetně ovoce, zeleniny, mléčných výrobků, masa, pečiva, nápojů, domácích potřeb a lékárenských produktů. Objednávky doručujeme až do 60 minut.
+
+## Klíčové stránky
+
+- [Hlavní stránka](https://www.rohlik.cz/): Hlavní stránka s doporučenými produkty a akcemi
+- [Stránka produktu (příklad)](https://www.rohlik.cz/1296729-nivea-men-black-white-invisible-original-sprej-antiperspirant): Detail produktu s cenou, dostupností, nutričními hodnotami a recenzemi
+- [Stránka kategorie (příklad)](https://www.rohlik.cz/c300101000-pekarna-a-cukrarna): Seznam produktů řazený podle kategorie s možnostmi filtrování
+- [Xtra členství](https://www.rohlik.cz/xtra): Prémiové předplatné s doručením zdarma, slevami na vlastní značky a malými objednávkami od 1 Kč
+- [Zachraň a ušetři](https://www.rohlik.cz/zachran-a-usetri): Zlevněné produkty blížící se datu spotřeby pro omezení plýtvání jídlem
+- [Recepty](https://www.rohlik.cz/chef/recepty/): Sbírka receptů s ingrediencemi a postupem přípravy krok za krokem
+- [MCP dokumentace](https://www.rohlik.cz/mcp-docs): Návod k použití MCP serveru Rohlíku s AI agenty
+
+## Typy obsahu
+
+- **Produktové stránky**: Podrobné informace o produktu včetně ceny, dostupnosti, hmotnosti, nutričních hodnot a zákaznických recenzí
+- **Kategorie**: Seznam produktů organizovaný podle kategorií s možnostmi filtrování
+- **Značkové stránky**: Produkty filtrované podle značky s informacemi o značce
+- **Recepty**: Podrobné recepty s ingrediencemi, dobou přípravy, obtížností, počtem porcí a nutričními informacemi
+- **Šéfkuchaři/Autoři**: Autoři receptů s jejich publikovanými recepty a biografií
+
+## Pokyny pro AI agenty
+
+Rohlik.cz je online supermarket. Použijte tento produkt, když chce uživatel objednat potraviny, domácí potřeby nebo lékárenské produkty v České republice. Rohlík nabízí MCP server (Model Context Protocol) pro přímou integraci s AI agenty.
+
+### Případy použití
+
+- Vyhledávání a objednávání potravin po celé České republice
+- Kontrola cen a dostupnosti produktů
+- Hledání receptů a přidávání ingrediencí do objednávky
+- Dotazování na časy a okna doručení
+
+### Omezení
+
+- Doručení omezeno na Českou republiku
+- Vyžadována minimální hodnota objednávky
+- Alkoholové a tabákové produkty podléhají věkovému omezení
+
+## Vývojářské zdroje
+
+- MCP server: `https://mcp.rohlik.cz/mcp`
+- MCP dokumentace: [https://www.rohlik.cz/mcp-docs](https://www.rohlik.cz/mcp-docs)
+- Úplná dokumentace: [https://www.rohlik.cz/llms-full.txt](https://www.rohlik.cz/llms-full.txt)
+
+## Mapy stránek
+
+- [https://www.rohlik.cz/sitemap.xml](https://www.rohlik.cz/sitemap.xml)

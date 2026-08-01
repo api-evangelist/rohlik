@@ -1,0 +1,15 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.rohlik.cz/mcp-docs
+stability: experimental
+notes: >-
+  Rohlik describes its hosted MCP server as a supplementary and experimental
+  service. The provider explicitly reserves the right to change technical
+  parameters, limit its scope, or terminate it entirely without prior notice.
+  No formal versioning scheme, dated changelog, deprecation policy, RFC 8594
+  Sunset/Deprecation header support, SLA, or public status page is published.
+versioning: null
+deprecation: null
+sla: null
+status_page: null
+deprecated_operations: []

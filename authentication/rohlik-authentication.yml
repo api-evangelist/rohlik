@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://identity.rohlik.cz/.well-known/openid-configuration
+docs: https://rohlik.cz/mcp-docs
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode, clientCredentials, deviceCode, tokenExchange, refreshToken]
+  bearer_methods: [header]
+schemes:
+  - name: RohlikOAuth2
+    type: oauth2
+    issuer: https://identity.rohlik.cz
+    authorization_endpoint: https://identity.rohlik.cz/oauth2/authorize
+    token_endpoint: https://identity.rohlik.cz/oauth2/token
+    userinfo_endpoint: https://identity.rohlik.cz/userinfo
+    jwks_uri: https://identity.rohlik.cz/oauth2/jwks
+    registration_endpoint: https://identity.rohlik.cz/connect/register   # RFC 7591 dynamic client registration
+    grant_types_supported:
+      - authorization_code
+      - client_credentials
+      - refresh_token
+      - urn:ietf:params:oauth:grant-type:device_code
+      - urn:ietf:params:oauth:grant-type:token-exchange
+    response_types_supported: [code]
+    code_challenge_methods_supported: [S256]                            # PKCE
+    token_endpoint_auth_methods_supported:
+      - client_secret_basic
+      - client_secret_post
+      - client_secret_jwt
+      - private_key_jwt
+      - tls_client_auth
+      - self_signed_tls_client_auth
+      - none
+    applies_to:
+      - https://mcp.rohlik.cz/mcp
+    sources:
+      - https://identity.rohlik.cz/.well-known/openid-configuration
+      - https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp

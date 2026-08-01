@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp
+docs: https://rohlik.cz/mcp-docs
+schemes:
+  - name: RohlikOAuth2
+    source: https://identity.rohlik.cz/.well-known/openid-configuration
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://identity.rohlik.cz/oauth2/authorize
+        tokenUrl: https://identity.rohlik.cz/oauth2/token
+scopes:
+  - scope: openid
+    description: OpenID Connect authentication; issue an ID token for the signed-in Rohlik account.
+    flows: [authorizationCode]
+    sources: [https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp]
+  - scope: email
+    description: Access the account's email address claim.
+    flows: [authorizationCode]
+    sources: [https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp]
+  - scope: roles
+    description: Access the account's assigned roles claim.
+    flows: [authorizationCode]
+    sources: [https://mcp.rohlik.cz/.well-known/oauth-protected-resource/mcp]

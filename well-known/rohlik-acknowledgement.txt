@@ -1,0 +1,6 @@
+2020-04-30 Marek Tóth - Cross Site Request Forgery, HTML Injection, XSS, Open Redirect, Session Fixation and proposed security.txt usage
+2020-07-23 Kamil Vávra - Web Cache Deception
+2020-08-11 Marek Tóth - Access control
+2020-12-22 Ján Masarik - Race-condition
+
+Thank you very much for your help!

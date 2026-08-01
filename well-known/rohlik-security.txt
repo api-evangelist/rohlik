@@ -1,0 +1,4 @@
+Contact: mailto:security@rohlik.cz
+Acknowledgement: /.well-known/acknowledgement.txt
+Preferred-Languages: cs, en
+Hiring: https://career.rohlik.group/

@@ -1,0 +1,1 @@
+{"resource":"https://mcp.rohlik.cz/mcp","authorization_servers":["https://identity.rohlik.cz"],"scopes_supported":["openid","email","roles"],"bearer_methods_supported":["header"]}
