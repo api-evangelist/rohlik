@@ -39,6 +39,16 @@ tags:
 - Company
 - Retail
 - Grocery
+- E-Commerce
+- Delivery
+- Logistics
+- MCP
+- Authentication
+- Europe
+tags_raw:
+- Company
+- Retail
+- Grocery
 - E-commerce
 - Delivery
 - Logistics
@@ -55,6 +65,10 @@ apis:
   humanURL: https://rohlik.cz/mcp-docs
   baseURL: https://mcp.rohlik.cz/mcp
   tags:
+  - MCP
+  - Grocery
+  - Authentication
+  tags_raw:
   - MCP
   - Grocery
   - OAuth
