@@ -11,6 +11,17 @@ description: >-
   build and manage a cart, discover recipes, track and repeat orders, and manage
   shopping lists on behalf of a signed-in customer, secured with OAuth 2.0 / OpenID
   Connect via identity.rohlik.cz. Rohlik is backed by Index Ventures and Partech.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
