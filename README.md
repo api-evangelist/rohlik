@@ -64,6 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Rohlik is a company surfaced as a portfolio company of index-ventures, partech and added to the API Evangelist network as a stub for enrichment. Sector: retail. This profile is a lead awaiting the enrichment pipeline.
+Rohlik (Rohlik Group) is a European online grocery service founded in 2014 by Tomáš Čupr and headquartered in Prague, Czechia. It operates fast, same-day and sub-hour grocery delivery across several markets under local brands — rohlik.cz in Czechia, Knuspr in Germany, Gurkerl in Austria, Kifli in Hungary, and Rohlik in Romania — combining an owned fulfillment/logistics stack with a wide fresh and private-label assortment. On the developer side, Rohlik runs an official hosted Model Context Protocol (MCP) server that lets AI assistants search the catalog, build and manage a cart, discover recipes, track and repeat orders, and manage shopping lists on behalf of a signed-in customer, secured with OAuth 2.0 / OpenID Connect via identity.rohlik.cz. Rohlik is backed by Index Ventures and Partech.
 
-Backed by: index-ventures, partech — http://rohlik.cz
+**Areas:** Company · Retail · Grocery · E-Commerce · Delivery · Logistics · MCP · Authentication · Europe
+
+## Rohlik on APIs.io
+
+Everything profiled for Rohlik is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rohlik/](https://apis.io/providers/rohlik/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Rohlik MCP Server](https://apis.io/apis/rohlik/rohlik-mcp-server/) — Official hosted Model Context Protocol server for Rohlik online grocery. Search the catalog, manage a cart, discover recipes, track and repeat orders,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [rohlik](https://apis.io/servers/rohlik/rohlik/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rohlik Authentication](https://apis.io/security/rohlik/rohlik-authentication/)
+- [Rohlik Domain Security](https://apis.io/security/rohlik/rohlik-domain-security/)
+- [Rohlik Vulnerability Disclosure](https://apis.io/security/rohlik/rohlik-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Rohlik Scopes](https://apis.io/scopes/rohlik/rohlik-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](http://rohlik.cz)
+- [Documentation](https://rohlik.cz/mcp-docs)
+- [Pricing](https://www.rohlik.cz/xtra)
+- [Support](https://www.rohlik.cz/stranka/kontakt)
+- [Security](https://www.rohlik.cz/.well-known/security.txt)
+- [Terms of service](https://www.rohlik.cz/stranka/vseobecne-obchodni-podminky)
+- [Privacy policy](https://www.rohlik.cz/stranka/zasady-zpracovani-osobnich-udaju)
+- [GitHub](https://github.com/rohlikgroup)
+
+## API Evangelist rating
+
+**Kin Score 27.9** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 31.6 |
+
+**Agent readiness 27.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 40.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rohlik/](https://apis.io/providers/rohlik/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Rohlik: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rohlik/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
